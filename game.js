@@ -53,3 +53,9 @@ function decideWinner(player1Move, player2Move, matrix) {
   return outcome
 }
 
+function getRandomMove(n) {
+  return Math.floor(Math.random() * n)
+}
+
+
+module.exports = { computeGames, getName, printMatrix, decideWinner, getRandomMove }
